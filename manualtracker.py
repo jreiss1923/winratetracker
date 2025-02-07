@@ -15,7 +15,7 @@ def calculateWinRate(currentRecord, goingToGo, desiredWinRate):
         raise ValueError("Your desired winrate is greater than or equal to the record you need to go.")
 
     numberToGo = int(round((totalWins - totalWins * desiredDecimal - totalLosses * desiredDecimal)/(desiredDecimal * goingToWin + desiredDecimal * goingToLose - goingToWin), 0))
-    print("\n\nYou need to go " + str(goingToGo) + " " + str(numberToGo) + " more times to reach your desired winrate of " + str(desiredWinRate) + "%")
+    print("\n\nYou need to go " + str(goingToGo) + " " + str(numberToGo) + " more times to reach your desired winrate of " + str(desiredWinRate) + "%.")
 
 calculateWinRate("147-319", "2-2", 33)
 
