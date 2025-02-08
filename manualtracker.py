@@ -17,7 +17,8 @@ def calculateWinRate(currentRecord, goingToGo, desiredWinRate):
     numberToGo = int(round((totalWins - totalWins * desiredDecimal - totalLosses * desiredDecimal)/(desiredDecimal * goingToWin + desiredDecimal * goingToLose - goingToWin), 0))
     print("\n\nYou need to go " + str(goingToGo) + " " + str(numberToGo) + " more times to reach your desired winrate of " + str(desiredWinRate) + "%.")
 
-calculateWinRate("147-319", "2-2", 33)
+# example usage: calculateWinRate("151-322", "2-2", 32.5)
+# output: "You need to go 2-2 4 more times to reach your desired winrate of 32.5%."
 
 
 
